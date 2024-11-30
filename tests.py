@@ -7,7 +7,7 @@ def default():
 
   print('example test: print function works(probably)')
 
-def parse_args(functions=['default']): # placeholder
+def parse_args(functions=[default]): # placeholder
   return functions
 
 def main(args=None):
