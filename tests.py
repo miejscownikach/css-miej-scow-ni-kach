@@ -8,7 +8,7 @@ def default():
   print('example test: print function works(probably)')
 
 def parse_args(args): # placeholder
-  if args[1:]==[]: args=['default']
+  if args[1:]==[]: args=[ [], 'default' ]
   for i in args[1:]:
     if i=='default':
       default()
