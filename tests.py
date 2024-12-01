@@ -7,8 +7,10 @@ def default():
 
   print('example test: print function works(probably)')
 
-def parse_args(functions=[default]): # placeholder
-  return functions
+def parse_args(functions=['default']): # placeholder
+  for i in functions:
+    if i=='default':
+      default()
 
 def main(args=None):
   if args==None:
@@ -16,9 +18,7 @@ def main(args=None):
   written in Python, which in order to be more suitable to rapid tests,
   is typically less efficient than c programming language.''')
   
-  functions = parse_args(args)
-  for function in functions:
-    function()
-
+  parse_args(args)
+  
 if __name__ == '__main__':
     main(argv)
