@@ -1,11 +1,17 @@
 '''tests.py'''
 from sys import argv
 
+def p_eq():
+  print('='*64)
+
 def default():
+  p_eq()
   print('''main test-bed. other tests should be moved off to other test functions,
   after they are satisfactory.''')
 
+  p_eq()
   print('example test: print function works(probably)')
+  p_eq()
 
 def parse_args(args): # placeholder
   if args[1:]==[]: args=[ [], 'default' ]
